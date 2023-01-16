@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QrCode generator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="qrCode__container">
+            <div class="qrCode__setting">
+                <input type="color" class="qrCode__light qrCode__color" value="#ffffff">
+                <input type="color" class="qrCode__dark qrCode__color" value="#000000">
+                <details class="qrCode__select">
+                    <summary class="qrCode__radios">
+                        <input type="radio" name="item" id="item1" title="100x100" class="qrCode__radio">
+                        <input type="radio" name="item" id="item2" title="200x200" class="qrCode__radio">
+                        <input type="radio" name="item" id="item3" title="300x300" class="qrCode__radio" checked>
+                        <input type="radio" name="item" id="item4" title="400x400" class="qrCode__radio">
+                        <input type="radio" name="item" id="item5" title="500x500" class="qrCode__radio">
+                        <input type="radio" name="item" id="item6" title="600x600" class="qrCode__radio">
+                        <input type="radio" name="item" id="item7" title="700x700" class="qrCode__radio">
+                        <input type="radio" name="item" id="item8" title="800x800" class="qrCode__radio">
+                        <input type="radio" name="item" id="item9" title="900x900" class="qrCode__radio">
+                        <input type="radio" name="item" id="item10" title="1000x1000" class="qrCode__radio">
+                    </summary>
+                    <ul class="qrCode__list">
+                        <li>
+                            <label for="item1">
+                                100x100
+                                <span></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="item2">200x200</label>
+                        </li>
+                        <li>
+                            <label for="item3">300x300</label>
+                        </li>
+                        <li>
+                            <label for="item4">400x400</label>
+                        </li>
+                        <li>
+                            <label for="item5">500x500</label>
+                        </li>
+                        <li>
+                            <label for="item6">600x600</label>
+                        </li>
+                        <li>
+                            <label for="item7">700x700</label>
+                        </li>
+                        <li>
+                            <label for="item8">800x800</label>
+                        </li>
+                        <li>
+                            <label for="item9">900x900</label>
+                        </li>
+                        <li>
+                            <label for="item10">1000x1000</label>
+                        </li>
+                    </ul>
+                </details>
+            </div>
+            <input type="text" id="qrCode__text" class="qrCode__text" placeholder="Enter QR Code text">
+            <div id="qrCode__content"></div>
+            <div class="qrCode__btns">
+                <a href="#" class="qrCode__download qrCode__btn">
+                    <span>Download</span>
+                    <img src="./img/download.svg" alt="Download icon">
+                </a>
+                <button class="qrCode__share qrCode__btn">
+                    <span>Share</span>
+                    <img src="./img/share.svg" alt="Share icon">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="index.js"></script> 
+</body>
+</html>
